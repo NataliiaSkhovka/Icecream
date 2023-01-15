@@ -1,0 +1,14 @@
+.about {
+  padding-bottom: 50px;
+  // background-color: $main-bg-color;
+  text-align: center;
+
+  @include tablet {
+    padding-bottom: 80px;
+    text-align: left;
+  }
+
+  @include desktop {
+    padding-bottom: 100px;
+  }
+}
