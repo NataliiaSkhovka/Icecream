@@ -35,30 +35,51 @@
 <body>
   <!--Header-->
   <header class="header">
-<div class="header__logo">
-  <a  class="logo" href="./index.html" aria-label="top page" lang="en-us">
-  <svg width="60px" height="65px">
-    <use href="./images/svg/symbol-defs.svg#icon-logo"></use>
-</svg>
-</a>
+<div class="header__container container">
+  <div class="header__logo">
+    <a  class="logo" href="./index.html" aria-label="top page" lang="en-us">
+     <svg width="60px" height="65px">
+      <use href="./images/svg/symbol-defs.svg#icon-logo"></use>
+     </svg>
+    </a>
 </div>
-<nav class="header-nav">
-  <ul class="header-nav__list list">
-    <li class="header-nav__item">
-      <a href="#home" class="header-nav__link">Home</a></li>
-    <li class="header-nav__item">
-      <a href="#how-its-made" class="header-nav__link">How it’s made?</a>
-    </li>
-    <li class="header-nav__item">
-      <a href="#products" class="header-nav__link">Our products</a>
-    </li>
-    <li class="header-nav__item">
-      <a href="#locations" class="header-nav__link">Contact</a>
-    </li>
+<!--mobile-menu button-->
+<button class="mobile-menu-btn" type="button" data-menu-button>
+  <svg class="mobile-menu-icon" width="24" height="11">
+    <use class="mobile-menu-burger" href="./images/symbol-defs.svg#icon-burger-menu"></use>
+  </svg>
+  <svg width="19" height="19">
+    <use class="mobile-menu-close" href="./images/symbol-defs.svg#icon-close"></use>
+  </svg>
+</button>
+<!--mobile-menu-->
+<div class="mobile-menu" data-menu>
+  <ul class="mobile-menu__list">
+    <li class="mobile-menu__item"><a class="mobile-menu__link" href="#hero"></a>Home</li>
+    <li class="mobile-menu__item"><a class="mobile-menu__link" href="#about"></a>How it’s made?</li>
+    <li class="mobile-menu__item"><a class="mobile-menu__link" href="#products""></a>Our products</li>
+    <li class="mobile-menu__item"><a class="mobile-menu__link" href="#locations"></a>Contact</li>
   </ul>
-</nav>
-<!--Open burger menu-->
-<button class="button header__btn js-open-modal" type="button" data-modal="1">Buy now ></button>
+</div>
+<!--Header nav-->
+  <nav class="header-nav">
+    <ul class="header-nav__list">
+      <li class="header-nav__item">
+        <a href="#hero" class="header-nav__link">Home</a></li>
+      <li class="header-nav__item">
+        <a href="#about" class="header-nav__link">How it’s made?</a>
+      </li>
+      <li class="header-nav__item">
+        <a href="#products" class="header-nav__link">Our products</a>
+      </li>
+      <li class="header-nav__item">
+        <a href="#locations" class="header-nav__link">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <!--Buy now button-->
+  <button class="button header__btn js-open-modal" type="button" data-modal="1">Buy now ></button>
+</div>
   </header>
 <!--Hero-->
   <section class="hero">
@@ -216,5 +237,7 @@
     </div>
     <p class="footer__copiryte">© 2022 - IceCream. All Rights Reserved. </p>
   </footer>
+  <script src="./js/modal.js"></script> 
+  <script src="./js/menu.js"></script> 
 </body>
 </html>
