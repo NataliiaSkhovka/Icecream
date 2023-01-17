@@ -95,37 +95,6 @@ ul {
   }
 }
 
-.button {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
-  background-color: #F8D24E;
-  width: 152px;
-  height: 42px;
-  cursor: pointer;
-  padding: 0px;
-  border-radius: 10px;
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.tab-desk__button:hover {
-  background: #0A8817;
-}
-
-.tab-desk__button:focus {
-  background: #0A8817;
-  color: white;
-}
-
 .mobile-menu-btn {
   background-color: transparent;
   border: none;
@@ -204,6 +173,37 @@ ul {
   .mobile-menu {
     display: none;
   }
+}
+
+.button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  background-color: #f8d24e;
+  width: 152px;
+  height: 42px;
+  cursor: pointer;
+  padding: 0px;
+  border-radius: 10px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button:hover {
+  background-color: #0A8817;
+}
+
+.button:focus {
+  background-color: #0A8817;
+  color: #ffffff;
 }
 
 .header {

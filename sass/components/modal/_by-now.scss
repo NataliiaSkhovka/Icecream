@@ -1,0 +1,25 @@
+.button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  background-color: $link-bg-color;
+  width: 152px;
+  height: 42px;
+  cursor: pointer;
+  padding: 0px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.button:hover {
+  background-color: #0A8817;
+}
+
+.button:focus {
+  background-color: #0A8817;
+  color:$accent-bg-color;
+}
