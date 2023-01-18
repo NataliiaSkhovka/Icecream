@@ -5,6 +5,12 @@ padding-bottom: 40px;
 &__list{
   display: flex;
   align-items: center;
+
+  --items:1;
+  @media screen and(min-width: 768px){
+   
+  --items:3;
+  }
 }
 
 &__item{
