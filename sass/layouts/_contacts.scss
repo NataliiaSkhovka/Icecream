@@ -1,0 +1,76 @@
+.contacts{
+ padding: 30px 20px; 
+
+ @media screen and(min-width: 480px){
+  padding: 30px 100px 12px 100px ; 
+  }
+
+@media screen and(min-width: 768px){
+  padding: 40px 32px 20px 32px ; 
+  }
+
+@media screen and(min-width: 1200px){
+  padding: 50px 16px 60px 16px;
+  }
+
+  &__container{
+    display: block;
+  }
+
+  &__locations{
+    display: flex;
+    max-width: 280px;
+    
+    @media screen and(min-width: 768px){
+      max-width: 224px;
+      }
+    
+    @media screen and(min-width: 1200px){
+      max-width: 368px;
+      }
+
+  }
+  &__thumb{
+    display: block;
+    text-align: start;
+    padding-top:40px ;
+    padding-right: auto;
+    padding-bottom: 40px;
+    padding-left: 32px;
+    background-color:$accent-bg-color ;
+   
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    @media screen and(min-width: 768px){
+      padding-left: 24px;
+      }
+
+    @media screen and(min-width: 1200px){
+      padding-left: 40px;
+      }
+  }
+
+  &__title{
+font-weight: 500;
+font-size: 12px;
+line-height: 1.4;
+text-align: center;
+
+color: $title-color-black;
+position: absolute;
+// max-width: 80px;
+// height: 22px;
+
+background: $link-bg-color;
+border-radius: 4px;
+
+@media screen and(min-width: 768px){
+  font-size: 16px;
+  // max-width: 76px;
+  // height: 30px;
+  border-radius: 6px;
+  }
+
+  }
+}

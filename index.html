@@ -142,7 +142,7 @@
       <ul class="advantages__list card-set">
         <li class="advantages__item card-set__item">
           <div class="advantages__box">
-            <svg class="advantages__icon" width="50px" height="50px">
+            <svg class="advantages__icon" width="36px" height="36px">
               <use href="./images/svg/symbol-defs.svg#icon-cow"></use>
             </svg>
           </div>
@@ -151,7 +151,7 @@
         </li>
         <li class="advantages__item card-set__item">
           <div class="advantages__box">
-            <svg class="advantages__icon" width="50px" height="50px">
+            <svg class="advantages__icon" width="29px" height="35px">
               <use href="./images/svg/symbol-defs.svg#icon-weight"></use>
             </svg>
           </div>
@@ -160,7 +160,7 @@
         </li>
         <li class="advantages__item card-set__item">
           <div class="advantages__box">
-            <svg class="advantages__icon" width="50px" height="50px">
+            <svg class="advantages__icon" width="17px" height="36px">
               <use href="./images/svg/symbol-defs.svg#icon-icecream"></use>
             </svg>
           </div>
@@ -172,7 +172,30 @@
   </section>
   <!--Gallery-->
   <section class="gallery">
-<img src="" alt="">
+    <div class="gallery__container">
+      <picture class="gallery__picture">
+      <source
+      media="(min-width: 1200px)"
+      srcset="./images/gallery/gallery1_desktop.jpg 1x, ./images/gallery/gallery1_desktop@2x.jpg 2x "
+      type="image/jpg" 
+      />
+      <source
+      media="(min-width: 768px)"
+      srcset="./images/gallery/gallery1_tablet.jpg 1x, ./images/gallery/gallery1_tablet@2x.jpg 2x "
+      type="image/jpg" 
+      />
+      <source
+      media="(min-width: 480px)"
+      srcset="./images/gallery/gallery1_480px.jpg 1x, ./images/gallery/gallery1_480px@2x.jpg 2x "
+      type="image/jpg" 
+      />
+      <source
+      media="(max-width: 479px)"
+      srcset="./images/gallery/gallery1_320px.jpg 1x, ./images/gallery/gallery1_320px@2x.jpg 2x "
+      type="image/jpg" 
+      />
+    <img src="./images/gallery/gallery1_320px.jpg" alt="gallery1" width="1013" height="130" />
+    </picture></div>
   </section>
   <!--Customer Reviews-->
   <section class="customer-reviews">
@@ -187,47 +210,53 @@
   </section>
   <!--Contacts-->
   <section class="contacts">
-    <div class="contacts__thumb">
-      <h4 class="contacts__title">CAFE</h4>
-      <p class="contacts__city">Chicago</p>
-      <p class="contacts__address">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
-      <ul class="contacts__work-list list">
-        <li class="work-list__days link" >Monday - Friday</li>
-        <li class="work-list__hours link ">06:00 AM - 10:00 PM</li>
-        <li class="work-list__days link" >Saturday - Sunday</li>
-        <li class="work-list__hours link ">08:00 AM - 16:00 PM</li>
-      </ul>
-      <p class="contacts__phone">+61(0) 383 766 284</p>
-      <p class="contacts__email">noreply@envato.com</p>
+    <div class="contacts__container">
+     <div class="contacts__locations">
+      <div class="contacts__thumb">
+        <h4 class="contacts__title">CAFE</h4>
+        <p class="contacts__city">Chicago</p>
+        <p class="contacts__address">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
+        <ul class="contacts__work-list list">
+          <li class="work-list__days link" >Monday - Friday</li>
+          <li class="work-list__hours link ">06:00 AM - 10:00 PM</li>
+          <li class="work-list__days link" >Saturday - Sunday</li>
+          <li class="work-list__hours link ">08:00 AM - 16:00 PM</li>
+        </ul>
+        <p class="contacts__phone">+61(0) 383 766 284</p>
+        <p class="contacts__email">noreply@envato.com</p>
+      </div>
+      <div class="contacts__thumb">
+        <h4 class="contacts__title">CAFE</h4>
+        <p class="contacts__city">Los Angeles</p>
+        <p class="contacts__address">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</p>
+        <ul class="contacts__work-list list">
+          <li class="work-list__days link" >Monday - Friday</li>
+          <li class="work-list__hours link ">06:00 AM - 10:00 PM</li>
+          <li class="work-list__days link" >Saturday - Sunday</li>
+          <li class="work-list__hours link ">08:00 AM - 16:00 PM</li>
+        </ul>
+        <p class="contacts__phone">+61(0) 383 766 284</p>
+        <p class="contacts__email">noreply@envato.com</p>
+      </div>
+      <div class="contacts__thumb">
+        <h4 class="contacts__title">FOOD TRUCK</h4>
+        <p class="contacts__city">New York</p>
+        <p class="contacts__address">726 Sterling Pl, Brooklyn, NY 11222, USA</p>
+        <ul class="contacts__work-list list">
+          <li class="work-list__days link" >Monday - Friday</li>
+          <li class="work-list__hours link ">06:00 AM - 10:00 PM</li>
+          <li class="work-list__days link" >Saturday - Sunday</li>
+          <li class="work-list__hours link ">08:00 AM - 16:00 PM</li>
+        </ul>
+        <p class="contacts__phone">+61(0) 383 766 284</p>
+        <p class="contacts__email">noreply@envato.com</p>
+      </div>
+     </div>
+      <div class="contacts__btn">
+      <button type="button" class="contacts__btn">Our Locations ></button>
+      <button type="button" class="contacts__btn">Franchise ></button>
+      </div>
     </div>
-    <div class="contacts__thumb">
-      <h4 class="contacts__title">CAFE</h4>
-      <p class="contacts__city">Los Angeles</p>
-      <p class="contacts__address">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</p>
-      <ul class="contacts__work-list list">
-        <li class="work-list__days link" >Monday - Friday</li>
-        <li class="work-list__hours link ">06:00 AM - 10:00 PM</li>
-        <li class="work-list__days link" >Saturday - Sunday</li>
-        <li class="work-list__hours link ">08:00 AM - 16:00 PM</li>
-      </ul>
-      <p class="contacts__phone">+61(0) 383 766 284</p>
-      <p class="contacts__email">noreply@envato.com</p>
-    </div>
-    <div class="contacts__thumb">
-      <h4 class="contacts__title">FOOD TRUCK</h4>
-      <p class="contacts__city">New York</p>
-      <p class="contacts__address">726 Sterling Pl, Brooklyn, NY 11222, USA</p>
-      <ul class="contacts__work-list list">
-        <li class="work-list__days link" >Monday - Friday</li>
-        <li class="work-list__hours link ">06:00 AM - 10:00 PM</li>
-        <li class="work-list__days link" >Saturday - Sunday</li>
-        <li class="work-list__hours link ">08:00 AM - 16:00 PM</li>
-      </ul>
-      <p class="contacts__phone">+61(0) 383 766 284</p>
-      <p class="contacts__email">noreply@envato.com</p>
-    </div>
-    <button type="button" class="contacts__btn">Our Locations ></button>
-    <button type="button" class="contacts__btn">Franchise ></button>
   </section>
   <!--FOOTER-->
   <footer class="footer">
