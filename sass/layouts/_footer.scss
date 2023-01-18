@@ -1,0 +1,23 @@
+.footer__container{
+display: flex;
+align-items: baseline;
+padding-top:100px ;
+padding-bottom: 12px;
+background-color:$main-bg-color ;
+}
+
+.footer__copiryte{
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  justify-content: center;
+  color:$copyright-color ;
+}
+.footer__copiryte::before{
+  height: 1px;
+   color: #E1E1E1;
+ 
+   @media screen and(min-width: 1200px){
+     max-width:1167px ;
+   }
+ }
