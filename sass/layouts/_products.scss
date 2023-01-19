@@ -1,0 +1,21 @@
+.products{
+  padding: 61px 20px 60px 20px;
+
+  @include mobile{
+    padding: 62px 80px 60px 80px;
+  }
+
+  @include tablet{
+    padding: 60px 32px 60px 32px;
+  }
+
+  @include desktop{
+    padding: 60px 16px 60px 16px;
+  }
+
+  &__container{
+    text-align: center;
+  }
+
+  
+}

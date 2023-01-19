@@ -15,4 +15,118 @@
   @include desktop{
     padding: 60px 127px 30px 16px;
   }
+
+ &__container{
+  align-items: center;
+ } 
+
+ &__subtitle{
+font-weight: 700;
+font-size: 18px;
+line-height: 1.22;
+margin-bottom: 12px;
+text-align: center;
+text-transform: uppercase;
+
+color: $main-text-color;
+
+@include tablet{
+font-weight: 800;
+font-size: 22px;
+line-height: 1.23;
+}
+
+@include desktop{
+  font-size: 30px;
+}
+ }
+
+ &__title{
+font-family: $title-fonts;
+
+font-weight: 400;
+font-size: 30px;
+line-height: 1.05;
+text-align: center;
+margin-bottom: 32px;
+text-transform: uppercase;
+
+color: $main-text-color;
+
+@include tablet{
+  font-size: 30px;
+  line-height: 1.26;
+  letter-spacing: 0.06em;
+  margin-bottom: 72px;
+}
+
+@include desktop{
+  font-size: 36px;
+  line-height: 1.25;
+  margin-bottom: 82px;
+}
+ }
+}
+
+.right-side__list{
+  display: block;
+  text-align: center;
+  margin-bottom: 24px;
+
+  @include tablet{
+    text-align: start;
+    margin-bottom: 32px;
+  }
+  @include desktop{
+    margin-bottom: 54px;
+  }
+}
+.right-side__item{
+font-size: 12px;
+line-height: 1.62;
+
+text-align: center;
+
+color: $main-text-color;
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+@include tablet{
+  line-height: 1.76;
+
+}
+@include desktop{
+  font-size: 14px;
+  line-height: 1.93; 
+}
+
+}
+.right-side__item:not(:last-child){
+  margin-bottom: 4px;
+
+  @include tablet{
+    margin-bottom: 8px;
+  }
+}
+
+.about__btn{
+  content: "";
+font-weight: 600;
+font-size: 14px;
+line-height: 1.29;
+width: 164px;
+height: 42px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+color: #000000;
+background-color:$link-bg-color ;
+align-items: center;
+text-align: center;
+box-sizing: border-box;
+border-radius: 10px;
+border: none;
 }
