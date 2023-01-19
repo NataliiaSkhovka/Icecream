@@ -41,18 +41,18 @@ background-color:$main-bg-color ;
 }
 
 &__item:not(:last-child){
-margin-right:28px ;
+--indent:28px ;
 
 @media screen and(min-width: 480px){
-  margin-right:32px ;
+--indent:32px ;
   
 }
 @media screen and(min-width: 768px){
-  margin-right:80px ;
+--indent:80px ;
   
 }
 @media screen and(min-width: 1200px){
-  margin-right:32px ;
+--indent:32px ;
   
 }
 }

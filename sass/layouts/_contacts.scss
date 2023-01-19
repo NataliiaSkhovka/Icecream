@@ -19,10 +19,13 @@
 
   &__locations{
     display: flex;
+    align-items: center;
     max-width: 280px;
-    
+    --items:1;
+
     @media screen and(min-width: 768px){
       max-width: 224px;
+      --items:3;
       }
     
     @media screen and(min-width: 1200px){
@@ -34,9 +37,12 @@
     display: block;
     text-align: start;
     padding-top:40px ;
-    padding-right: auto;
+    padding-right: 32px;
     padding-bottom: 40px;
     padding-left: 32px;
+    width: 280px;
+    height: 412px;
+    
     background-color:$accent-bg-color ;
    
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -44,13 +50,26 @@
 
     @media screen and(min-width: 768px){
       padding-left: 24px;
+      padding-right: 24px;
+      max-width: 224px;
+      height: 537px;
       }
 
     @media screen and(min-width: 1200px){
-      padding-left: 40px;
+      padding: 40px;
+      width: 368px;
+      height: 542px;
       }
   }
 
+  &__thumb:not(:last-child){
+    --indent:16px ;
+    
+    @media screen and(min-width: 1200px){
+      --indent:32px ;
+      
+    }
+    }
   &__title{
 font-weight: 500;
 font-size: 12px;
@@ -58,11 +77,9 @@ line-height: 1.4;
 text-align: center;
 
 color: $title-color-black;
-position: absolute;
-// max-width: 80px;
-// height: 22px;
 
-background: $link-bg-color;
+margin-bottom: 20px;
+background-color: $link-bg-color;
 border-radius: 4px;
 
 @media screen and(min-width: 768px){
@@ -70,7 +87,116 @@ border-radius: 4px;
   // max-width: 76px;
   // height: 30px;
   border-radius: 6px;
+  margin-bottom: 32px;
   }
 
+  }
+
+  &__city{
+font-weight: 500;
+font-size: 12px;
+line-height: 1.86;
+color:$secondary-text-color;
+
+@media screen and(min-width: 768px){
+  font-size: 14px;
+}
+
+@media screen and(min-width: 768px){
+  font-size: 16px;
+  
+}
+  }
+
+  &__address{
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  margin-bottom: 8px;
+  color:$link-bg-color;
+  }
+
+  @media screen and(min-width: 768px){
+    font-size: 14px;
+  }
+
+  @media screen and(min-width: 1200px){
+    font-size: 16px;
+    
+  }
+  
+  &__work-list{
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    @media screen and(min-width: 768px){
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__phone, &__email{
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color:$secondary-text-color;
+
+  @media screen and(min-width: 768px){
+    font-size: 14px;
+  }
+  
+  @media screen and(min-width: 768px){
+    font-size: 16px;
+    
+  }
+  }
+}
+
+.work-list__days,.work-list__hours {
+font-weight: 500;
+font-size: 12px;
+line-height: 1.86;
+color:$secondary-text-color;
+
+  @media screen and(min-width: 768px){
+    font-size: 14px;
+  }
+  
+  @media screen and(min-width: 1200px){
+    font-size: 16px;
+    
+  }
+}
+
+.work-list__hours{
+color: $time-color;
+}
+
+.contacts__btn{
+  width: 196px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+
+display: block;
+align-items: center;
+text-align: center;
+box-sizing: border-box;
+color: $secondary-text-color;
+background:$link-bg-color;
+border-radius: 10px;
+
+@media screen and(min-width: 768px){
+  display: flex;
+}
+
+}
+
+.contacts__btn:not(:last-child){
+  --indent:16px;
+
+  @media screen and(min-width: 1200px){
+  --indent: 32px;
   }
 }

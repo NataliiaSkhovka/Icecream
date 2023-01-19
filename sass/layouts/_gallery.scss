@@ -12,10 +12,12 @@
   &__container{
     display: flex;
     justify-content: center;
+    background-color:$main-bg-color ;
    
   }  
 
   &__picture{
+    
     max-width: 280px;
     height: 130px;
 
