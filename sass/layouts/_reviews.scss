@@ -1,0 +1,65 @@
+.customer-reviews{
+padding: 40px 20px 30px 20px;
+text-align: center;
+
+@media screen and(min-width: 480px){
+  padding: 40px 100px 30px 100px;
+}
+
+@media screen and(min-width: 768px){
+  padding: 50px 31px 40px 32px;
+}
+
+@media screen and(min-width: 1200px){
+  padding: 70px 116px 50px 116px;
+}
+&__box{
+background: $main-bg-color;
+box-sizing: border-box;
+text-align: center;
+border-radius: 24px;
+max-width: 280px;
+
+@media screen and(min-width: 768px){
+  max-width: 705px;
+}
+
+@media screen and(min-width: 1200px){
+  max-width: 968px;
+}
+}
+
+&__text{
+font-weight: 500;
+font-size: 12px;
+line-height: 2.6;
+text-align: center;
+
+color: $main-text-color;
+
+@media screen and(min-width: 768px){
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+@media screen and(min-width: 1200px){
+  font-size: 16px;
+  line-height: 1.86; 
+}
+}
+
+&__name{
+font-weight: 500;
+font-size: 20px;
+line-height: 1.86;
+text-align: center;
+
+color: $title-color-black;
+
+@media screen and(min-width: 768px){
+  font-size: 16px;
+  
+}
+
+}
+}

@@ -326,18 +326,23 @@ ul {
 }
 
 .about {
-  padding-bottom: 50px;
+  padding: 61px 20px 25px 20px;
+  background-color: #84a178;
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .about {
+    padding: 60px 100px 30px 100px;
+  }
 }
 @media screen and (min-width: 768px) {
   .about {
-    padding-bottom: 80px;
-    text-align: left;
+    padding: 60px 34px 30px 32px;
   }
 }
 @media screen and (min-width: 1200px) {
   .about {
-    padding-bottom: 100px;
+    padding: 60px 127px 30px 16px;
   }
 }
 
@@ -518,6 +523,75 @@ ul {
   .gallery__picture {
     max-width: 1013px;
     height: 422px;
+  }
+}
+
+.customer-reviews {
+  padding: 40px 20px 30px 20px;
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .customer-reviews {
+    padding: 40px 100px 30px 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customer-reviews {
+    padding: 50px 31px 40px 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer-reviews {
+    padding: 70px 116px 50px 116px;
+  }
+}
+.customer-reviews__box {
+  background: #84a178;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  border-radius: 24px;
+  max-width: 280px;
+}
+@media screen and (min-width: 768px) {
+  .customer-reviews__box {
+    max-width: 705px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer-reviews__box {
+    max-width: 968px;
+  }
+}
+.customer-reviews__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.6;
+  text-align: center;
+  color: #fcfcfc;
+}
+@media screen and (min-width: 768px) {
+  .customer-reviews__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer-reviews__text {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+.customer-reviews__name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  text-align: center;
+  color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .customer-reviews__name {
+    font-size: 16px;
   }
 }
 
@@ -865,6 +939,29 @@ ul {
 .footer-socials__link:hover,
 .footer-socials__link:focus {
   fill: #fcfcfc;
+}
+
+.footer__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: right;
+  color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .footer__text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__text {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.footer__phone {
+  color: #fcfcfc;
 }
 
 .footer__coop {

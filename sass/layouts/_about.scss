@@ -1,14 +1,18 @@
 .about {
-  padding-bottom: 50px;
-  // background-color: $main-bg-color;
+  padding:61px 20px 25px 20px;
+  background-color: $main-bg-color;
   text-align: center;
 
-  @include tablet {
-    padding-bottom: 80px;
-    text-align: left;
+  @include mobile {
+    padding: 60px 100px 30px 100px;
+    
   }
 
-  @include desktop {
-    padding-bottom: 100px;
+  @include tablet {
+    padding: 60px 34px 30px 32px;
+  }
+
+  @include desktop{
+    padding: 60px 127px 30px 16px;
   }
 }
