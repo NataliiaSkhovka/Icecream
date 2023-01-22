@@ -17,71 +17,212 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Seymour+One&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
   integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
   crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
   <link rel="icon" href="./images/favicon.png" type="image" />
 
-  <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   
+  
   <title>IceCream</title>
   <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
   <!--Header-->
-  <header class="header">
+  <header class="header" id="home">
 <div class="header__container container">
   <div class="header__logo">
-    <a  class="logo" href="./index.html" aria-label="top page" lang="en-us">
-     <svg width="60px" height="65px">
-      <use href="./images/svg/symbol-defs.svg#icon-logo"></use>
-     </svg>
-    </a>
+    <a  class="header__logo-desktop" href="#home" aria-label="top page">
+      <picture>
+        <source srcset="./images/logo_tablet.png" media="(max-width:768px)" />
+        <img src="./images/logo/logo.png" alt="logo" />
+      </picture>
 </div>
 <!--mobile-menu button-->
-<button class="mobile-menu-btn" type="button" data-menu-button>
-  <svg class="mobile-menu-icon" width="24" height="11">
-    <use class="mobile-menu-burger" href="./images/symbol-defs.svg#icon-burger-menu"></use>
-  </svg>
-  <svg width="19" height="19">
-    <use class="mobile-menu-close" href="./images/symbol-defs.svg#icon-close"></use>
-  </svg>
-</button>
-<!--mobile-menu-->
-<div class="mobile-menu" data-menu>
-  <ul class="mobile-menu__list">
-    <li class="mobile-menu__item"><a class="mobile-menu__link" href="#hero"></a>Home</li>
-    <li class="mobile-menu__item"><a class="mobile-menu__link" href="#about"></a>How it’s made?</li>
-    <li class="mobile-menu__item"><a class="mobile-menu__link" href="#products""></a>Our products</li>
-    <li class="mobile-menu__item"><a class="mobile-menu__link" href="#locations"></a>Contact</li>
-  </ul>
-</div>
-<!--Header nav-->
-  <nav class="header-nav">
-    <ul class="header-nav__list">
-      <li class="header-nav__item">
-        <a href="#hero" class="header-nav__link">Home</a></li>
-      <li class="header-nav__item">
-        <a href="#about" class="header-nav__link">How it’s made?</a>
+<button
+      class="header__menu-button button__mobil-menu js-open-modal"
+      type="button"
+      data-modal="2">
+      <svg class="mobil-icon" width="32" height="32" aria-label="menu">
+        <use
+          class="header__icon-menu"
+          href="./images/symbol-defs.svg#icon-burger-menu"
+        ></use>
+      </svg>
+    </button>
+    <!-- MOBILE MENU -->
+    <div class="header__mobil-menu modal" data-modal="2">
+      <a class="header__logo-mobil header__ise-logo" href="#"
+        ><img src="./images/logo/logo_tablet.png" alt="logo"
+      /></a>
+      <!--   Svg ICON CLOSE -->
+      <svg
+        class="modal__cross header__modal-cros js-modal-close"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+        />
+      </svg>
+      <ul class="header__mobil-menu-list">
+        <li class="header__mobil-menu-item">
+          <a class="header__mobil-menu-link js-modal-close" href="#home"
+            >Home</a
+          >
+        </li>
+        <li class="header__mobil-menu-item">
+          <a class="header__mobil-menu-link js-modal-close" href="#how-its-made"
+            >How it’s made?</a
+          >
+        </li>
+        <li class="header__mobil-menu-item">
+          <a class="header__mobil-menu-link js-modal-close" href="#products"
+            >Our products</a
+          >
+        </li>
+        <li class="header__mobil-menu-item">
+          <a class="header__mobil-menu-link js-modal-close" href="#contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <button class="header-tab-desk__in-menu button js-open-modal"
+        type="button" data-modal="1"> Buy now
+        <svg width="12" height="12" class="button__arrow">
+          <use href="./images/symbol-defs.svg#icon-arrow-right-bold"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- HEADER NAV -->
+    <nav class="header__nav" id="menu">
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a href="#home" class="header-nav__link">Home</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#how-its-made" class="header-nav__link">How it’s made?</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#products" class="header-nav__link">Our products</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#contact" class="header-nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- BUTTON buy noy -->
+    <button class="header-tab-desk__button button js-open-modal" type="button"
+      data-modal="1">Buy now
+      
+      <svg width="12" height="12" class="button__arrow">
+        <use href="./images/symbol-defs.svg#icon-arrow-right-bold"></use>
+      </svg>
+    </button>
+  </div>
+  <!--HEADER MODAL-->
+  <div class="modal header-modal" data-modal="1">
+    <button type="button" class="modal__cross js-modal-close">
+      <svg class="icon-close">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="header-modal__title">Buy now</h2>
+    <ul class="header-modal__list">
+      <li class="header-modal__item">
+        <label class="header-modal__label">
+          <input
+            class="header-modal__checkbox"
+            type="checkbox"
+            name="product"
+            value="icecream"
+          />
+          <span class="header-modal__product header-modal__product--icecream">
+            ice cream
+            <img
+              class="product-img"
+              srcset="
+                ./images/modal-icecream_@1x-min.png 1x,
+                ./images/modal-icecream_@2x-min.png 2x
+              "
+              src="./images/modal-icecream_@1x-min.png"
+              alt="ice-cream"
+            />
+          </span>
+        </label>
       </li>
-      <li class="header-nav__item">
-        <a href="#products" class="header-nav__link">Our products</a>
+      <li class="header-modal__item">
+        <label class="header-modal__label">
+          <input
+            class="header-modal__checkbox"
+            type="checkbox"
+            name="product"
+            value="icecoffe"
+          />
+          <span class="header-modal__product header-modal__product--icecoffee">
+            ice coffee
+            <img
+              class="product-img"
+              srcset="
+                ./images/modal-icecoffee_@1x-min.png 1x,
+                ./images/modal-icecoffee_@2x-min.png 2x
+              "
+              src="./images/modal-icecoffee_@1x-min.png"
+              alt="ice-coffee"
+            />
+          </span>
+        </label>
       </li>
-      <li class="header-nav__item">
-        <a href="#locations" class="header-nav__link">Contact</a>
+      <li class="header-modal__item">
+        <label class="header-modal__label">
+          <input
+            class="header-modal__checkbox"
+            type="checkbox"
+            name="product"
+            value="milkshake"
+          />
+          <span class="header-modal__product header-modal__product--milkshake"
+            >milkshake
+            <img
+              class="product-img"
+              srcset="
+                ./images/modal-milkshake_@1x-min.png 1x,
+                ./images/modal-milkshake_@2x-min.png 2x
+              "
+              src="./images/modal-milkshake_@1x-min.png"
+              alt="milkshake"
+            />
+          </span>
+        </label>
       </li>
     </ul>
-  </nav>
-  <!--Buy now button-->
-  <button class="button header__btn js-open-modal" type="button" data-modal="1">Buy now ></button>
-</div>
-  </header>
-<!--Hero-->
+    <form class="header-modal__form">
+      <input
+        class="header-modal__input buynow-js"
+        type="text"
+        required
+        placeholder="Name"
+        pattern="^[a-zA-Z]+$"
+        title="Name cannot contain numbers or symbols."
+      />
+      <input class="header-modal__input buynow-js" type="tel" required
+      placeholder="+61(0) ___ ___ ___" data-slots="_" title="+61(0) ___ ___ ___"/>
+      <textarea
+        class="header-modal__input header-modal__comment"
+        name="comment"
+        placeholder="Comment"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <button class="submit-btn button buynow-button-js" type="submit">
+        Submit
+      </button>
+    </form>
+  </div>  
+</header>
+<!--HERO-->
   <section class="hero">
     <div class="hero__left-side">
       <h1 class="hero__title title">ice cream
@@ -307,6 +448,10 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript" src="//web-ptica.ru/VRV-files/jquery-2.1.3.min.js"
+    ></script>
   <script src="./js/modal.js"></script> 
   <script src="./js/menu.js"></script> 
 </body>
