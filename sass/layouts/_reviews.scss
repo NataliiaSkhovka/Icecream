@@ -1,65 +1,120 @@
-.customer-reviews{
-padding: 40px 20px 30px 20px;
-text-align: center;
+.customer-reviews {
+  padding: 80px 0 40px;
 
-@media screen and(min-width: 480px){
-  padding: 40px 100px 30px 100px;
+  @include mobile {
+    padding: 80px 0 60px;
+  }
+
+  @include tablet {
+    padding: 100px 0 80px;
+  }
+
+  @include desktop {
+    padding: 140px 0 100px;
+  }
+
+  &__container {
+    @include tel {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+
+  &__img-wrapp {
+    width: 85px;
+    height: 85px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+  }
+
+  &__img {
+    width: 85px;
+    height: 85px;
+  }
+
+  &__wrapp {
+    width: 280px;
+    height: 256px;
+    background: $main-bg-color;
+    border-radius: 10px;
+    padding: 35px 39px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+
+    @include tablet {
+      width: 705px;
+      height: 138px;
+      padding: 28px 80px;
+      border-radius: 24px;
+    }
+
+    @include desktop {
+      width: 968px;
+      height: 138px;
+      border-radius: 24px;
+      padding: 43px 109px;
+    }
+  }
+
+  &__text {
+    @include font(400, 12px, 2.58, null);
+    text-align: center;
+    color: $title-color-white;
+
+    @include tablet {
+      @include font(500, 14px, 1.86, 0.04em);
+    }
+
+    @include desktop {
+      @include font(500, 16px, 1.88, 0.04em);
+    }
+  }
+
+  &__desc {
+    @include font(500, 20px, 1.85, null);
+    text-align: center;
+    color: $secondary-text-color;
+    margin-bottom: 12px;
+
+    @include tablet {
+      @include font(500, 16px, 1.88, null);
+      margin-bottom: 32px;
+    }
+
+    @include desktop {
+      @include font(500, 16px, 1.88, null);
+      margin-bottom: 32px;
+    }
+  }
 }
 
-@media screen and(min-width: 768px){
-  padding: 50px 31px 40px 32px;
-}
+///СТИЛИ СЛАЙДЕРА
 
-@media screen and(min-width: 1200px){
-  padding: 70px 116px 50px 116px;
-}
-&__box{
-background: $main-bg-color;
-box-sizing: border-box;
-text-align: center;
-border-radius: 24px;
-max-width: 280px;
+.swiper {
+  overflow: hidden;
+  z-index: 1;
 
-@media screen and(min-width: 768px){
-  max-width: 705px;
-}
+  &-slide {
+    padding-bottom: 20px;
 
-@media screen and(min-width: 1200px){
-  max-width: 968px;
-}
-}
+    @include tablet {
+      padding: 0;
+    }
+  }
 
-&__text{
-font-weight: 500;
-font-size: 12px;
-line-height: 2.6;
-text-align: center;
+  &-pagination-bullet-active {
+    background-color: $main-bg-color;
+    width: 12px;
+    height: 12px;
+  }
 
-color: $main-text-color;
-
-@media screen and(min-width: 768px){
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-@media screen and(min-width: 1200px){
-  font-size: 16px;
-  line-height: 1.86; 
-}
-}
-
-&__name{
-font-weight: 500;
-font-size: 20px;
-line-height: 1.86;
-text-align: center;
-
-color: $title-color-black;
-
-@media screen and(min-width: 768px){
-  font-size: 16px;
-  
-}
-
-}
+  &-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
 }
